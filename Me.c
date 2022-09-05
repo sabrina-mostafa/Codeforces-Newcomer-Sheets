@@ -3,6 +3,10 @@
 
 int main()
 {
-  printf("My name is Sabrina Mostafa\n") ;
+  char name[10] ;
+  
+  scanf("%s", name) ;
+  printf("My name is %s\n", name) ;
+  
   return 0 ;
 }
