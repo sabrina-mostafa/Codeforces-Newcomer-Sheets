@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main ()
+{
+  long long int n,t,x,r,s,p,i,j,count;
+  scanf("%lld",&t);
+  while(t--)
+  {
+    scanf("%lld",&n);
+    x=0;
+    count=0;
+    while(n!=0)
+    {
+      r=n%2;
+      if(r==1)
+      {
+        x=(x*10)+r;
+        count++;
+      }
+      n/=2;
+    }
+    //printf("x=%lld\ncount=%lld\n",x,count);
+    s=1;
+    for(i=1;i<=count;i++)
+    {
+      s*=2;
+    }
+    printf("%lld\n",(s-1));
+  }
+}
